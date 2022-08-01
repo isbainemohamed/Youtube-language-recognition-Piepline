@@ -1,10 +1,7 @@
-# 📙 `Language-Identifier with SVM in python` 🐍:
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74627083/181483400-7c02cb91-512f-48b4-b1fb-577148639791.png" />
-</p>
+# `Language-Recognition with SVM in python` 🐍:
 
-- 🎯 In this notebook, I tried to write a script capable of idenetifying the language used in a text. 
-- 🛠️ The supported languages are:  **`Swahili`**, **`Wolof`**, **`French`**, **`English`**, **`Arabic`** and **`Dyula`**.
+This project aims to create a pipeline that extract youtube videos and perform transcription on their related audios. 
+The code gets a list of youtube channels and scraps all videos that are tagged with some keywords (defined in keyword file). After downloading audios, comments and available transcriptions. A language detection model detects the language spoken in the video and perform transcription. The supported languages are:  **`Swahili`**, **`Wolof`**, **`French`**, **`English`**, **`Arabic`** and **`Dyula`**.
 - ⚠️ In order to have precise results, _`the sentence you provide to the script must be relatively long`_ (contains at least **4**/**5** words).
 > The code in this notebook can easily be modified to add or modify the languages you want to detect: if you want to add other languages, just add a training dataset on the targeted languages, this dataset can be found by example on [HuggingFace Datesets](https://huggingface.co/datasets?sort=downloads).
 
@@ -14,7 +11,7 @@
 - Here are **TWO** ways to use the trained model in notebook: (You must before install the requirements)
 
 ```py
-    !pip install pickle sys pandas
+    !pip install pickle sys pandas ytb-dlp
 ```
 
 ##### meth 1
